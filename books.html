@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رواياتي - Rayane Brahmi</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #f9f6f1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4a3f35;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.8em;
+        }
+        .container {
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .book-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+        .book-cover {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .book-cover:hover {
+            transform: scale(1.05);
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #6e5846;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .download-btn:hover {
+            background-color: #8c6d57;
+        }
+        .rating {
+            margin-top: 10px;
+            color: #f5a623;
+        }
+        .comment-box {
+            margin-top: 15px;
+            text-align: left;
+        }
+        .comment-box textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-family: 'Cairo', sans-serif;
+        }
+        .comment-box button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #4a3f35;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>رواياتي - Rayane Brahmi</header>
+    <div class="container">
+
+        <div class="book-card">
+            <img src="images/bab.jpg" alt="غلاف رواية الباب الملعون" class="book-cover">
+            <h2>الباب الملعون</h2>
+            <p>في ليلة كانت مثل كل الليالي .. أو هذا ما اعتقد بطلنا حتى رأى باباً غريباً، فما الذي يوجد خلفه؟</p>
+            <a href="https://www.mediafire.com/file/cnq2i03j18uqr0b/%25D8%25A7%25D9%2584%25D8%25A8%25D8%25A7%25D8%25A8_%25D8%25A7%25D9%2584%25D9%2585%25D9%2584%25D8%25B9%25D9%2588%25D9%2586_20250209_145536_0000.pdf/file" class="download-btn">تحميل الرواية</a>
+            <div class="rating">★★★★★</div>
+            <div class="comment-box">
+                <textarea placeholder="اترك تعليقك هنا..."></textarea>
+                <button>إرسال</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="images/baad.jpg" alt="غلاف رواية بعد آخر" class="book-cover">
+            <h2>بعد آخر</h2>
+            <p>بعد رحلة عادية مع أصدقائه، يجد بطلنا نفسه في عالم غريب... هل سيتمكن من العودة؟</p>
+            <a href="https://www.mediafire.com/file/654t498kq1mvzai/%25D8%25A8%25D8%25B9%25D8%25AF_%25D8%25A7%25D9%2593%25D8%25AE%25D8%25B1__%25D9%2584%25D8%25B1%25D9%258A%25D8%25A7%25D9%2586_%25D8%25A8%25D8%25B1%25D8%25A7%25D9%2587%25D9%2585%25D9%258A.pdf.pdf/file" class="download-btn">تحميل الرواية</a>
+            <div class="rating">★★★★☆</div>
+            <div class="comment-box">
+                <textarea placeholder="اترك تعليقك هنا..."></textarea>
+                <button>إرسال</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="images/ard.jpg" alt="غلاف رواية أرض الظلال" class="book-cover">
+            <h2>أرض الظلال</h2>
+            <p>لا توجد كلمات تصف هذه الرواية... اقرأها بنفسك وقدّم وصفًا يليق بها إن استطعت.</p>
+            <a href="https://www.mediafire.com/file/juzezgp684cwppo/%25D8%25A3%25D8%25B1%25D8%25B6_%25D8%25A7%25D9%2584%25D8%25B8%25D9%2584%25D8%25A7%25D9%2584_20250210_164257_0000.pdf/file" class="download-btn">تحميل الرواية</a>
+            <div class="rating">★★★★☆</div>
+            <div class="comment-box">
+                <textarea placeholder="اترك تعليقك هنا..."></textarea>
+                <button>إرسال</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
