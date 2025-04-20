@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رواياتي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #4a3f55;
+    }
+    .book {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .book img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .book h2 {
+      color: #6a4c93;
+    }
+    .book p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #6a4c93;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .rating {
+      direction: ltr;
+      unicode-bidi: bidi-override;
+      text-align: right;
+    }
+    .rating input {
+      display: none;
+    }
+    .rating label {
+      font-size: 30px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    .rating input:checked ~ label,
+    .rating label:hover,
+    .rating label:hover ~ label {
+      color: gold;
+    }
+    .comments {
+      margin-top: 15px;
+    }
+    .comments textarea {
+      width: 100%;
+      height: 80px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      font-family: inherit;
+    }
+    .comments button {
+      margin-top: 8px;
+      padding: 8px 16px;
+      background-color: #4a3f55;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>رواياتي</h1>
+
+    <div class="book">
+      <img src="images/bab.jpg" alt="رواية الباب الملعون">
+      <h2>الباب الملعون</h2>
+      <p>في ليلة كانت مثل كل الليالي .. أو هذا ما إعتقد بطلنا حتى أدت بضعة أحداث الى رؤيته لباب غريب .. فما الذي يوجد وراء هذا الباب و مالمصير الذي ينتضر بطلنا</p>
+      <a class="download-btn" href="https://www.mediafire.com/file/cnq2i03j18uqr0b/%25D8%25A7%25D9%2584%25D8%25A8%25D8%25A7%25D8%25A8_%25D8%25A7%25D9%2584%25D9%2585%25D9%2584%25D8%25B9%25D9%2588%25D9%2586_20250209_145536_0000.pdf/file" target="_blank">تحميل الرواية</a>
+      <div class="rating">
+        <input type="radio" name="rate1" id="1star1"><label for="1star1">&#9733;</label>
+        <input type="radio" name="rate1" id="2star1"><label for="2star1">&#9733;</label>
+        <input type="radio" name="rate1" id="3star1"><label for="3star1">&#9733;</label>
+        <input type="radio" name="rate1" id="4star1"><label for="4star1">&#9733;</label>
+        <input type="radio" name="rate1" id="5star1"><label for="5star1">&#9733;</label>
+      </div>
+      <div class="comments">
+        <textarea placeholder="أضف تعليقك هنا..."></textarea>
+        <button>إرسال</button>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="images/baad.jpg" alt="رواية بعد آخر">
+      <h2>بعد آخر</h2>
+      <p>بعد رحلة عادية من بعض من أصدقائه يجد بطلنا نفسه في عالم غريب .. فما الأحداث التي تنتظره في ذلك العالم و هل يستطيع العودة الى عالمه؟</p>
+      <a class="download-btn" href="https://www.mediafire.com/file/654t498kq1mvzai/%25D8%25A8%25D8%25B9%25D8%25AF_%25D8%25A7%25D9%2593%25D8%25AE%25D8%25B1__%25D9%2584%25D8%25B1%25D9%258A%25D8%25A7%25D9%2586_%25D8%25A8%25D8%25B1%25D8%25A7%25D9%2587%25D9%2585%25D9%258A.pdf.pdf/file" target="_blank">تحميل الرواية</a>
+      <div class="rating">
+        <input type="radio" name="rate2" id="1star2"><label for="1star2">&#9733;</label>
+        <input type="radio" name="rate2" id="2star2"><label for="2star2">&#9733;</label>
+        <input type="radio" name="rate2" id="3star2"><label for="3star2">&#9733;</label>
+        <input type="radio" name="rate2" id="4star2"><label for="4star2">&#9733;</label>
+        <input type="radio" name="rate2" id="5star2"><label for="5star2">&#9733;</label>
+      </div>
+      <div class="comments">
+        <textarea placeholder="أضف تعليقك هنا..."></textarea>
+        <button>إرسال</button>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="images/ard.jpg" alt="رواية أرض الظلال">
+      <h2>أرض الظلال</h2>
+      <p>لا توجد كلمات تصف هذه الرواية .. أقرأها بنفسك و قدم لها وصفا يليق بها إن أستطعت</p>
+      <a class="download-btn" href="https://www.mediafire.com/file/juzezgp684cwppo/%25D8%25A3%25D8%25B1%25D8%25B6_%25D8%25A7%25D9%2584%25D8%25B8%25D9%2584%25D8%25A7%25D9%2584_20250210_164257_0000.pdf/file" target="_blank">تحميل الرواية</a>
+      <div class="rating">
+        <input type="radio" name="rate3" id="1star3"><label for="1star3">&#9733;</label>
+        <input type="radio" name="rate3" id="2star3"><label for="2star3">&#9733;</label>
+        <input type="radio" name="rate3" id="3star3"><label for="3star3">&#9733;</label>
+        <input type="radio" name="rate3" id="4star3"><label for="4star3">&#9733;</label>
+        <input type="radio" name="rate3" id="5star3"><label for="5star3">&#9733;</label>
+      </div>
+      <div class="comments">
+        <textarea placeholder="أضف تعليقك هنا..."></textarea>
+        <button>إرسال</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
